@@ -20,5 +20,11 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
-    path('about/', include('main.urls'))
+    # path('about/', include('main.urls')),
+    path('', include('main.urls')),
+    # path('news/', include('main.urls')),
+    # path('about/', include('main.urls')),
+    # path('contacts/', include('main.urls')),
+    path(f'z/<int:age>', include('main.urls')),
+    path(f'm/<int:age>', include('main.urls')),
 ]
