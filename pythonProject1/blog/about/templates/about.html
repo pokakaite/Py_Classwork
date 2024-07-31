@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <div style="width: auto; height: 100px; background-color: lavender;">
+        <div style="width: 500px; height: 100px; margin: auto; display: flex; flex: space-between;">
+        <a href="{% url 'home' %}" style="color: HotPink; margin: auto; width: auto; height: 200px; font-size: xx-large;">Главная</a>
+        <a href="{% url 'about' %}" style="color: HotPink; margin: auto; width: auto; height: 200px; font-size: xx-large;">О нас</a>
+        <a href="https://www.youtube.com/" style="color: HotPink; margin: auto; width: auto; height: 200px; font-size: xx-large;">Ютуб</a>
+        </div>
+    </div>
+        <h1 style="color: MediumSlateBlue; margin: auto; height: 100px; width: 100px;">{{title}}</h1>
+    <p style="font-size: 72px;">{{text}}</p>
+    {% if digite %}
+    <p style="font-size: 100px;">{{digite}}</p>
+    {% endif %}
+    {%for i in gen%}
+    <h1>{{i}}</h1>
+    {%endfor%}
+</body>
+</html>

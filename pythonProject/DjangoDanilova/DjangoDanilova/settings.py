@@ -54,8 +54,8 @@ ROOT_URLCONF = 'DjangoDanilova.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'main.template'],
+        'BACKEND': 'django.templates.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / "main/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

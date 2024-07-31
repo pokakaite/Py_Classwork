@@ -19,7 +19,7 @@ from . import views
 
 urlpatterns = [
     path('', views.main),
-    path(f'z/<int:age>', views.z_age),
-    path(f'm/<int:age>', views.m_age),
+    # path(f'z/<int:age>', views.z_age),
+    # path(f'm/<int:age>', views.m_age),
 ]
 

@@ -5,10 +5,6 @@ from django.http import HttpResponse
 from random import choice
 import datetime
 
-
-# Create your views here.
-
-
 # def one(request):
 #         quotes = ['Добро пожаловать', 'До свидания', 'Пока']
 #         # return HttpResponse(f'<h1><center>{choice(quotes)}<center></h1>')
