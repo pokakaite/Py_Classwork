@@ -1,0 +1,10 @@
+{% extends "layouts/layout.html" %}
+
+{% block content %}
+    {% include "posts/post_search.html" %}
+    {% if found %}
+        {{ found }}
+    {% else %}
+        ничего не найдено
+    {% endif %}
+{% endblock %}
