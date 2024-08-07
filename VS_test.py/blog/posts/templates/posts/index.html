@@ -1,7 +1,24 @@
 {% extends "layouts/layout.html" %}
 
 {% block content %}
+<div class="flex gap-3 m-3">
     {% include "posts/post_search.html" %}
+    <a href="{% url "post_create" %}" class="inline-block"
+        type="button"
+        class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+        Добавить пост
+    </a>
+</div>
+    <div class="flex gap-3 m-3">
+        {% for i in posts %}
+        <div class="bg-green-100">
+            <h1>{{ i.title }}</h1>                
+            <h3>{{ i.anouncement }}</h3>
+            <p>{{ i.text }}</p>
+            <span>{{ i.date }}</span>
+        </div>
+        {% endfor %}
+    </div>
     {% if found %}
         {{ found }}
     {% else %}

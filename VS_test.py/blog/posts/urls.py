@@ -5,5 +5,6 @@ from .views import *
 
 urlpatterns = [
     path('', index, name='posts'),
-    path('/<str:smth>', smth)
+    # path('<str:smth>/', smth),
+    path('create/', create, name='post_create')
 ]

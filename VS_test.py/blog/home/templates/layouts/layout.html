@@ -1,20 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .home {
-            display: flex;
-            justify-content: space-around;
-            font-size: 150px;
-            margin: auto;
-            width: 500px;
-            color: black;
-            margin-top: 300px;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static "source/css/style.css" %}">
 
     <link
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
@@ -44,12 +35,10 @@
 
     {% include "layouts/menu.html" %}
 
-    <div class="bg-red-400">
+    <div class="otstup">
         {% block content %}
         {% endblock content %}
-
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
 </body>
 </html>

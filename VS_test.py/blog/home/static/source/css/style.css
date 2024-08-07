@@ -1,0 +1,12 @@
+.home {
+    width: auto;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.otstup {
+    background-color: cadetblue;
+    margin: auto 10%;
+}
