@@ -18,8 +18,6 @@ class Posts(models.Model):
 
 # class Posts(models.class (models.Model):
 
-    
-
 #     class Meta:
 #         verbose_name = _("")
 #         verbose_name_plural = _("s")
